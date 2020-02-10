@@ -1,0 +1,18 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    check-template-location: true
+    suffix: .html
+    encoding: UTF-8
+    servlet: {content-type: text/html}
+    mode: HTML5
+    cache: false
+monitor:
+  dirPath: ['D:\monitor-test', 'D:\monitor-test1']
+  interval: 1000
+  fileSuffix: .pdf
+  handleDirPath: D:\monitor-test2
+  workDir: /00-50-56-C0-00-08
+ftp: {ip: 172.16.121.20, username: ftptest123, password: 12345678, workDir: 00-50-56-C0-00-08,
+  space: /home/ftptest123}
+server: {port: 8989}
